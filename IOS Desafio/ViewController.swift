@@ -12,9 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var userLogin: UITextField!
     @IBOutlet weak var userPassword: UITextField!
-    @IBOutlet weak var userValidation: UILabel!
-    @IBOutlet weak var userProgress: UIButton!
-    
+    @IBOutlet weak var userVal idation: UILabel!
     
     
     
@@ -22,8 +20,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
     }
-
-
+    @IBAction func loguinButton(_ sender: UIButton) {
+    
+      self.performSegue(withIdentifier: "Information", sender: self)
+    
+    }
+    
 }
-
