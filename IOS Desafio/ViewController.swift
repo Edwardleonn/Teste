@@ -6,26 +6,40 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ViewController: UIViewController {
-
     
+    @IBOutlet weak var UserWarning: UILabel!
     @IBOutlet weak var userLogin: UITextField!
     @IBOutlet weak var userPassword: UITextField!
-    @IBOutlet weak var userVal idation: UILabel!
     
-    
-    
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-
     }
-    @IBAction func loguinButton(_ sender: UIButton) {
     
-      self.performSegue(withIdentifier: "Information", sender: self)
+//    @IBAction func loginButton(_ sender: UIButton) {
+//        self.performSegue(withIdentifier: "Information", sender: self)
+//    }
     
-    }
     
 }
+
+extension ViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+                    setupLogin()
+                }
+        
+                func setupLogin() {
+                    self.userLogin.text = ""
+                    self.userPassword.text = ""
+                }
+        
+       
+    }
+    
+
