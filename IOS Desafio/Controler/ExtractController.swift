@@ -15,7 +15,7 @@ class ExtractController: UIViewController {
         super.viewDidLoad()
         
         
-        var view = self.gradientLayer
+        let view = self.gradientLayer
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view!.bounds
         gradientLayer.colors = [#colorLiteral(red: 0.6911319494, green: 0.7786149383, blue: 0.8909720778, alpha: 1).cgColor, #colorLiteral(red: 0.06023143977, green: 0.3886301816, blue: 0.5756700635, alpha: 1).cgColor]

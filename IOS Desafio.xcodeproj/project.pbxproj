@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B65F66823831E8D053D1E374 /* Pods_IOS_Desafio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C857BD579425DE9B94C8F02 /* Pods_IOS_Desafio.framework */; };
-		BA19880227E220A70036491B /* ServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA19880127E220A70036491B /* ServiceCall.swift */; };
+		BA19880227E220A70036491B /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA19880127E220A70036491B /* Services.swift */; };
 		BA1B177927DF636F0056C4E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B177827DF636F0056C4E2 /* AppDelegate.swift */; };
 		BA1B177B27DF636F0056C4E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B177A27DF636F0056C4E2 /* SceneDelegate.swift */; };
 		BA1B177D27DF636F0056C4E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B177C27DF636F0056C4E2 /* ViewController.swift */; };
@@ -20,12 +20,14 @@
 		BA5D621627E24163009030FD /* Extract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5D621527E24163009030FD /* Extract.swift */; };
 		BA5EB6C027EA0C9600703AF6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5EB6BF27EA0C9600703AF6 /* Validation.swift */; };
 		BAAF57A527EA4CB6004131BB /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAF57A427EA4CB6004131BB /* TableView.swift */; };
+		BAAF57A927EB6097004131BB /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAF57A827EB6097004131BB /* Cell.swift */; };
+		BAAF57AB27ECA925004131BB /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAF57AA27ECA925004131BB /* Formatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C857BD579425DE9B94C8F02 /* Pods_IOS_Desafio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Desafio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F96FA1B4DFCA5EBE32E0B26 /* Pods-IOS Desafio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Desafio.release.xcconfig"; path = "Target Support Files/Pods-IOS Desafio/Pods-IOS Desafio.release.xcconfig"; sourceTree = "<group>"; };
-		BA19880127E220A70036491B /* ServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCall.swift; sourceTree = "<group>"; };
+		BA19880127E220A70036491B /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		BA1B177527DF636F0056C4E2 /* IOS Desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Desafio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1B177827DF636F0056C4E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1B177A27DF636F0056C4E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,8 @@
 		BA5D621527E24163009030FD /* Extract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extract.swift; sourceTree = "<group>"; };
 		BA5EB6BF27EA0C9600703AF6 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = "/Users/virtualmachine/Documents/IOSDesafio/IOS Desafio/Validation.swift"; sourceTree = "<absolute>"; };
 		BAAF57A427EA4CB6004131BB /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableView.swift; path = "/Users/virtualmachine/Documents/IOSDesafio/IOS Desafio/TableView.swift"; sourceTree = "<absolute>"; };
+		BAAF57A827EB6097004131BB /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = "/Users/virtualmachine/Documents/IOSDesafio/IOS Desafio/Cell.swift"; sourceTree = "<absolute>"; };
+		BAAF57AA27ECA925004131BB /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
 		CD4234C5109EC574429A1383 /* Pods-IOS Desafio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Desafio.debug.xcconfig"; path = "Target Support Files/Pods-IOS Desafio/Pods-IOS Desafio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,21 +96,63 @@
 		BA1B177727DF636F0056C4E2 /* IOS Desafio */ = {
 			isa = PBXGroup;
 			children = (
-				BA19880127E220A70036491B /* ServiceCall.swift */,
-				BA5D621527E24163009030FD /* Extract.swift */,
-				BA5D621327E232A6009030FD /* Login.swift */,
-				BA1B177827DF636F0056C4E2 /* AppDelegate.swift */,
-				BA1B177A27DF636F0056C4E2 /* SceneDelegate.swift */,
-				BA1B177C27DF636F0056C4E2 /* ViewController.swift */,
-				BA1B179427E0BDC30056C4E2 /* ExtractController.swift */,
-				BA5EB6BF27EA0C9600703AF6 /* Validation.swift */,
+				BACED95A27F3167600FF6ACC /* Models */,
+				BACED95827F3160100FF6ACC /* Controler */,
 				BAAF57A427EA4CB6004131BB /* TableView.swift */,
-				BA1B177E27DF636F0056C4E2 /* Main.storyboard */,
+				BACED95727F315EB00FF6ACC /* View */,
 				BA1B178127DF63730056C4E2 /* Assets.xcassets */,
 				BA1B178327DF63730056C4E2 /* LaunchScreen.storyboard */,
 				BA1B178627DF63730056C4E2 /* Info.plist */,
 			);
 			path = "IOS Desafio";
+			sourceTree = "<group>";
+		};
+		BACED95727F315EB00FF6ACC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA1B177E27DF636F0056C4E2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BACED95827F3160100FF6ACC /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				BA1B177C27DF636F0056C4E2 /* ViewController.swift */,
+				BA1B179427E0BDC30056C4E2 /* ExtractController.swift */,
+				BACED95927F3163A00FF6ACC /* CustomCell */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		BACED95927F3163A00FF6ACC /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				BAAF57A827EB6097004131BB /* Cell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		BACED95A27F3167600FF6ACC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA1B177827DF636F0056C4E2 /* AppDelegate.swift */,
+				BA1B177A27DF636F0056C4E2 /* SceneDelegate.swift */,
+				BAAF57AA27ECA925004131BB /* Formatting.swift */,
+				BA5EB6BF27EA0C9600703AF6 /* Validation.swift */,
+				BA5D621527E24163009030FD /* Extract.swift */,
+				BA5D621327E232A6009030FD /* Login.swift */,
+				BACED95B27F3168000FF6ACC /* Service */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BACED95B27F3168000FF6ACC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA19880127E220A70036491B /* Services.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,10 +273,12 @@
 				BA5D621427E232A6009030FD /* Login.swift in Sources */,
 				BA1B177D27DF636F0056C4E2 /* ViewController.swift in Sources */,
 				BA1B179527E0BDC30056C4E2 /* ExtractController.swift in Sources */,
+				BAAF57AB27ECA925004131BB /* Formatting.swift in Sources */,
 				BA5D621627E24163009030FD /* Extract.swift in Sources */,
 				BAAF57A527EA4CB6004131BB /* TableView.swift in Sources */,
 				BA1B177927DF636F0056C4E2 /* AppDelegate.swift in Sources */,
-				BA19880227E220A70036491B /* ServiceCall.swift in Sources */,
+				BA19880227E220A70036491B /* Services.swift in Sources */,
+				BAAF57A927EB6097004131BB /* Cell.swift in Sources */,
 				BA5EB6C027EA0C9600703AF6 /* Validation.swift in Sources */,
 				BA1B177B27DF636F0056C4E2 /* SceneDelegate.swift in Sources */,
 			);

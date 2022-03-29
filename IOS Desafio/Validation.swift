@@ -8,7 +8,7 @@
 import Foundation
 import CPF_CNPJ_Validator
 
-struct Validations {
+struct Validation {
     
     let user : String
     let password: String
